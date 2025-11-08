@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriLearn Hub | Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png" /> 
+  <style>
+    
+
+/* ===== Root Theme Colors ===== */
+:root {
+  --bg-color: #f2f9f1;
+  --accent-color: #3b7a57;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: var(--accent-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  background: #2e6045;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 12px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d9ffd8;
+}
+
+/* ===== Section Headings ===== */
+h2 {
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* ===== Shop Section ===== */
+.shop-section {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* ===== Product Cards ===== */
+.product-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #2e6045;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+/* ===== Buy Button ===== */
+.buy-btn {
+  display: inline-block;
+  background: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.buy-btn:hover {
+  background: #2e6045;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--accent-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #d9ffd8;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .product-card img {
+    height: 160px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>AgriLearn Hub - Shop</h1>
+  </header>
+
+  <!-- ===== Navigation Bar ===== -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="learn.html">Learn</a>
+    <a href="shop.html" style="color:#d9ffd8;">Shop</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- ===== Shop Section ===== -->
+  <section class="shop-section">
+    <h2>🌿 Explore Our Organic Store</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="product1.jpg" alt="Organic Fertilizer">
+        <h3>Organic Fertilizer</h3>
+        <p>Boost your crops naturally with our eco-friendly fertilizers.</p>
+        <div class="price">₹250 / kg</div>
+        <a href="#" class="buy-btn">Add to Cart</a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="product2.jpg" alt="Hybrid Seeds">
+        <h3>Hybrid Seeds</h3>
+        <p>High-yield seeds to ensure better productivity and quality.</p>
+        <div class="price">₹120 / pack</div>
+        <a href="#" class="buy-btn">Add to Cart</a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="product3.jpg" alt="Drip Irrigation Kit">
+        <h3>Drip Irrigation Kit</h3>
+        <p>Save water and increase efficiency with easy-to-install kits.</p>
+        <div class="price">₹999 / set</div>
+        <a href="#" class="buy-btn">Add to Cart</a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="product4.jpg" alt="Soil Testing Kit">
+        <h3>Soil Testing Kit</h3>
+        <p>Analyze soil nutrients and improve crop planning.</p>
+        <div class="price">₹499 / kit</div>
+        <a href="#" class="buy-btn">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 AgriLearn Hub | All Rights Reserved</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="learn.html">Learn</a> |
+      <a href="shop.html">Shop</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
+
